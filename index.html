@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date and Time India</title>
+</head>
+<body>
+    <p id="date"></p>
+<script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    if (m<10) {
+        m='0'+m
+    }
+    if (d<10) {
+        d='0'+m
+    }
+    document.getElementById("date").innerHTML = d + "-" + m + "-" + y;
+</script>
+</body>
+</html>
